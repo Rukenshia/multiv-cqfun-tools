@@ -1,0 +1,55 @@
+<snippet>
+	<content><![CDATA[
+local __instance = null;
+
+class
+	$1 extends LCORM
+{
+	m_strTable 		= "$2";
+
+	// Fields
+	id				=	0
+
+	m_aFields		=	["id"]
+
+	constructor ()
+	{
+		m_tOldData = {};
+
+		if (__instance != null)
+			return;
+			
+		base.constructor (m_strTable);
+		__instance = this;
+	}
+
+	// Essential Functions
+	function Initialize () 
+	{
+		return true;
+	}
+
+	function Destroy ()
+	{
+		return true;
+	}
+
+	function GetClassName ()
+		return "$1";
+
+	// Getters and Setters
+	function GetInstance ()
+		return __instance;
+
+	// Is-Functions
+
+	// Other Functions
+	function Save ()
+		base.Update(this, m_aFields);
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>Database Model</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.nut</scope>
+</snippet>

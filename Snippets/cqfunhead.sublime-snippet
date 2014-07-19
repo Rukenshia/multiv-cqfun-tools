@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+/*
+ *		MultIV CQFun
+ *	@file: $TM_FILENAME
+ *	@author: $TM_FULLNAME
+ *     
+ *	@license: see "LICENSE" at root directory
+ */
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cqfunh</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.nut</scope>
+</snippet>

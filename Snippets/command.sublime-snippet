@@ -1,0 +1,40 @@
+<snippet>
+	<content><![CDATA[
+class 
+	$1 extends LCCommand
+{
+	constructor ()
+	{
+		base.constructor("$2");
+		SetUsage("$3");
+		SetExactParameter(false);
+
+		CommandManager.Register(this);
+	}
+
+	function GetClassName ()
+		return "$1";
+
+	function GetName ()
+		return "$1";
+
+	function GetParameterCount ()
+		return $4;
+
+	function Run(ciPlayer${5:, })
+	{
+
+	}
+
+	function CheckAuthority (ciPlayer)
+	{
+		if (!base.CheckAuthority(ciPlayer))
+			return false;
+		return true;
+	}
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>Command</tabTrigger>
+	<scope>source.nut</scope>
+</snippet>
