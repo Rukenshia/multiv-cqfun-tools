@@ -3,21 +3,15 @@
 local __instance = null;
 
 class
-	$1 extends CQORM
+	$1	
 {
-	m_strTable 		= "$2";
-
-	// Fields
-	$3
-
 	constructor ()
 	{
-
 		if (__instance != null)
-			return;
+			throw("Recreation of $1");
 
-		base.constructor (m_strTable);
 		__instance = this;
+		Initialize();
 	}
 
 	// Essential Functions
@@ -31,22 +25,14 @@ class
 		return true;
 	}
 
-	function GetName ()
-		return "$1";
-
 	// Getters and Setters
-	function GetInstance ()
-		return __instance;
 
 	// Is-Functions
 
 	// Other Functions
-	function Save ()
-		base.Update(this);
 }
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>Database Model</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<tabTrigger>singleton class</tabTrigger>
 	<scope>source.nut</scope>
 </snippet>

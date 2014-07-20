@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+{
+	"filepath": "Server/$1",
+	"type": "server"
+},
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>script_server</tabTrigger>
+	<scope>source.json</scope>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+{
+	"filepath": "Client/$1",
+	"type": "client"
+},
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>script_client</tabTrigger>
+	<scope>source.json</scope>
+</snippet>
