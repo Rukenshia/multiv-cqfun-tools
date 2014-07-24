@@ -78,7 +78,7 @@ class
 	var strDofiles string
 
 	for _, command := range Commands {
-		strDofiles += strings.Replace(commandDofileProto, "{Path}", "Server/Commands/"+command.path, -1) + "\n"
+		strDofiles += strings.Replace(commandDofileProto, "{Path}", CommandPath[3:]+"/"+command.path, -1) + "\n"
 		strCommands += strings.Replace(commandProto, "{Command}", command.name, 1) + "\n"
 	}
 
