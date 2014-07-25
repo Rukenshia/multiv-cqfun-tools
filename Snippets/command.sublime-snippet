@@ -6,6 +6,7 @@ class
 	constructor ()
 	{
 		base.constructor("$2");
+		SetUsage("$3");
 		CommandManager.Register(this);
 	}
 
@@ -20,7 +21,7 @@ class
 		return true;
 	}
 
-	function Run (ciPlayer$3)
+	function Run (ciPlayer$4)
 	{
 	}
 }
